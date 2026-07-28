@@ -406,7 +406,7 @@
 
   let MAX_HEALTH = getURLParam('health', 20);
   let MAX_CONSECUTIVE_ESCAPES = getURLParam('escapes', 1);
-  let LESS_THAN_OR_EQUAL = getURLParam('ltoe', 0); 
+  let LESS_THAN_OR_EQUAL = getURLParam('ltoe', 1); 
   let INVINCIBLE_START = getURLParam('invincible', 0);
 
   const SUITS = {
@@ -474,7 +474,7 @@
   function resetGame() {
     MAX_HEALTH = getURLParam('health', 20);
     MAX_CONSECUTIVE_ESCAPES = getURLParam('escapes', 1);
-    LESS_THAN_OR_EQUAL = getURLParam('ltoe', 0);
+    LESS_THAN_OR_EQUAL = getURLParam('ltoe', 1);
     INVINCIBLE_START = getURLParam('invincible', 0);
 
     health = MAX_HEALTH;
